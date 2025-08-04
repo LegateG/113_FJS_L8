@@ -55,3 +55,16 @@ const clonedStudent = {
     courses: [...student.courses]
 };
 console.log('Cloned Student Object:', clonedStudent);
+
+// Add a new property to the cloned object, and log it.
+// This will not affect the original student object.
+clonedStudent.graduationYear = 2024;
+console.log('Cloned student after adding graduationYear:', clonedStudent);
+
+// Now, let's modify the courses array on the cloned student.
+// This will NOT affect the original student object.
+clonedStudent.courses.push('Advanced Frontend Development');
+console.log('Cloned student after modifying courses array:', clonedStudent);
+
+// The original student object remains unchanged.
+console.log('Original student object courses:', student.courses);

@@ -47,3 +47,11 @@ const [firstScore, secondScore] = scores;
 console.log('\n--- Destructuring an Array ---');
 console.log('First Score:', firstScore);
 console.log('Second Score:', secondScore);
+
+// Part 4: The Spread Operator
+console.log('\n--- Part 4: The Spread Operator ---');
+const clonedStudent = {
+    ...student,
+    courses: [...student.courses]
+};
+console.log('Cloned Student Object:', clonedStudent);

@@ -19,3 +19,9 @@ console.log(`Student's name is: ${student.name}`);
 console.log(`Student's age is: ${student.age}`);
 console.log('\nCalling the displayInfo method:');
 student.displayInfo();
+
+// Part 2: Working with JSON
+// Converting the student object into a JSON string.
+const jsonStudent = JSON.stringify(student);
+console.log('\n--- JSON String Representation ---');
+console.log(jsonStudent);

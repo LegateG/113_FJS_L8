@@ -25,3 +25,7 @@ student.displayInfo();
 const jsonStudent = JSON.stringify(student);
 console.log('\n--- JSON String Representation ---');
 console.log(jsonStudent);
+// Convert the JSON string back into a JavaScript object, and log it.
+const parsedStudent = JSON.parse(jsonStudent);
+console.log('\n--- Parsed JavaScript Object ---');
+console.log(parsedStudent);

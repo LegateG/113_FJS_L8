@@ -13,6 +13,21 @@ const student = {
     }
 };
 
+// Adding a new method to get the total number of courses
+student.addCourse = function(courseName) {
+    if (typeof courseName === 'string' && courseName.trim() !== '') {
+        this.courses.push(courseName);
+        console.log(`${courseName} has been added to the courses.`);
+    } else {
+        console.log('Invalid course name. Please provide a string.');
+    }
+};
+
+// Method to calculate and return the total number of courses
+student.getTotalCourses = function() {
+    return this.courses.length;
+};
+
 // Outputting the student's details and call the method.
 console.log('--- Initial Student Object Details ---');
 console.log(`Student's name is: ${student.name}`);

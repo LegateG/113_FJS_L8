@@ -84,3 +84,10 @@ console.log(`Current number of courses: ${student.getTotalCourses()}`);
 student.addCourse('Database Systems');
 console.log('Total courses after adding a new one:', student.getTotalCourses());
 console.log('Final list of courses:', student.courses);
+
+// Bonus: Calculating the Average Score with Reduce
+console.log('\n--- Bonus: Calculating the Average Score with Reduce ---');
+// Use a concise arrow function for the reduce method.
+const scoreSum = scores.reduce((sum, score) => sum + score, 0);
+const averageScore = scoreSum / scores.length;
+console.log(`Average Score: ${averageScore.toFixed(2)}`);

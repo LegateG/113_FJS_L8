@@ -34,3 +34,9 @@ console.log('\n--- Comparing Objects ---');
 /// Note: The parsed object will not have methods, so they will not be strictly equal.
 console.log('Are the original and parsed objects identical?');
 console.log(student === parsedStudent); // This will be false.
+
+// Part 3: Using Destructuring Assignment
+const [name, courses] = student;
+console.log('\n--- Destructuring Assignment ---');
+console.log('Student Name (from destructuring):', name);
+console.log('Student Courses (from destructuring):', courses);

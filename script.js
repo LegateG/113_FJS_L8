@@ -36,7 +36,7 @@ console.log('Are the original and parsed objects identical?');
 console.log(student === parsedStudent); // This will be false.
 
 // Part 3: Using Destructuring Assignment
-const [name, courses] = student;
+const {name:studentName, courses} = student;
 console.log('\n--- Destructuring Assignment ---');
-console.log('Student Name (from destructuring):', name);
+console.log('Student Name (from destructuring):', studentName);
 console.log('Student Courses (from destructuring):', courses);

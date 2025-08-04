@@ -29,3 +29,8 @@ console.log(jsonStudent);
 const parsedStudent = JSON.parse(jsonStudent);
 console.log('\n--- Parsed JavaScript Object ---');
 console.log(parsedStudent);
+console.log('\n--- Comparing Objects ---');
+// Compare the original object and the parsed object.
+/// Note: The parsed object will not have methods, so they will not be strictly equal.
+console.log('Are the original and parsed objects identical?');
+console.log(student === parsedStudent); // This will be false.

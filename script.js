@@ -68,3 +68,11 @@ console.log('Cloned student after modifying courses array:', clonedStudent);
 
 // The original student object remains unchanged.
 console.log('Original student object courses:', student.courses);
+
+// Use the spread operator to merge two arrays.
+const newCourses = ['Software Engineering', 'Machine Learning'];
+const allCourses = [...student.courses, ...newCourses];
+
+console.log('\n--- Merging Arrays ---');
+console.log('New Courses:', newCourses);
+console.log('All Courses:', allCourses);

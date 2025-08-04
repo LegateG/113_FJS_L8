@@ -76,3 +76,11 @@ const allCourses = [...student.courses, ...newCourses];
 console.log('\n--- Merging Arrays ---');
 console.log('New Courses:', newCourses);
 console.log('All Courses:', allCourses);
+
+// Part 5: Using new Object Methods
+console.log('\n--- Part 5: Using New Object Methods ---');
+console.log(`Current number of courses: ${student.getTotalCourses()}`);
+// Adding a method to the student object to dynamically add a course
+student.addCourse('Database Systems');
+console.log('Total courses after adding a new one:', student.getTotalCourses());
+console.log('Final list of courses:', student.courses);

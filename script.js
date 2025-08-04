@@ -40,3 +40,10 @@ const {name:studentName, courses} = student;
 console.log('\n--- Destructuring Assignment ---');
 console.log('Student Name (from destructuring):', studentName);
 console.log('Student Courses (from destructuring):', courses);
+
+// Destructuring an array of scores
+const scores = [85, 92, 78, 90];
+const [firstScore, secondScore] = scores;
+console.log('\n--- Destructuring an Array ---');
+console.log('First Score:', firstScore);
+console.log('Second Score:', secondScore);
